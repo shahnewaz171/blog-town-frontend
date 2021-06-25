@@ -19,7 +19,6 @@ const BlogDetails = () => {
                 <div className="flex flex-wrap">
                     <div className="blog-description p-4">
                         <p className="mb-8">At sem sed arcu elementum aliquam. Curabitur non ligula auctor, hendrerit dui non, aliquet turpis. Cras tempus justo non elit dictum convallis. Aliquam imperdiet tortor ac ultricies rhoncus. Sed tristique laoreet sapien, sit amet sagittis magna accumsan a. Nam ultrices sem justo, vitae vehicula nibh finibus quis.</p>
-                        
                     </div>
                 </div>
             </div>

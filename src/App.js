@@ -8,6 +8,7 @@ import Blogs from './components/Home/Blogs/Blogs';
 import CreatePost from './components/CreatePost/CreatePost';
 import BlogDetails from './components/Home/BlogDetails/BlogDetails';
 import Admin from './components/Admin/Admin';
+import ManageBlogs from './components/Admin/ManageBlogs/ManageBlogs';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,17 +40,22 @@ function App() {
             <Dropdown isOpen={isOpen} toggle={toggle} />
             <Home />
           </Route>
-          <Route path="/createPost">
-            <CreatePost />
-          </Route>
           <Route path="/blogs">
+            <Navbar toggle={toggle} />
+            <Dropdown isOpen={isOpen} toggle={toggle} />
             <Blogs />
           </Route>
           <Route path="/blogDetails">
             <BlogDetails />
           </Route>
-          <Route path="/admin">
+          <Route path="/admin-profile">
             <Admin />
+          </Route>
+          <Route path="/create-blog">
+            <CreatePost />
+          </Route>
+          <Route path="/manage-blogs">
+            <ManageBlogs />
           </Route>
         </Switch>
       </Router>

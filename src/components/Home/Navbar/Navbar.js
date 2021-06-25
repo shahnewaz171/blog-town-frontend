@@ -13,7 +13,7 @@ const Navbar = ({toggle}) => {
                 <div className="md:block hidden">
                     <Link to="/home" className="p-4 hover:text-green-800 nav-item font-medium text-lg">Home</Link>
                     <Link to="/blogs" className="p-4 hover:text-green-800 nav-item font-medium text-lg">Blogs</Link>
-                    <Link to="/createPost" className="p-4 hover:text-green-800 nav-item font-medium text-lg">Create Post</Link>
+                    <Link to="/admin-profile" className="p-4 hover:text-green-800 nav-item font-medium text-lg">Admin</Link>
                     <Link to="/contact" className="p-4 hover:text-green-800 nav-item font-medium text-lg">Contact</Link>
                     <Link to="#">
                         <button className="text-white ml-4 bg-green-800 hover:bg-green-700 py-2 px-4 rounded">Login</button>
