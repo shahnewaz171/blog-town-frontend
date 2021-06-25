@@ -29,7 +29,7 @@ const Blogs = () => {
                             <img className="rounded-lg max-w-full h-auto" src={blog1} alt="Woman paying for a purchase" />
                         </div>
                         <div className="mt-4 md:mt-0 bg-white px-6">
-                            <div className="tracking-wide text-sm blog-title font-extrabold mt-3 text-xl">Gorgeous blog</div>
+                            <div className="tracking-wide text-sm blog-title font-extrabold mt-3 text-xl">Going On A Road Trip Across The US</div>
                             <p className="mt-2 text-gray-600">
                                 <FontAwesomeIcon icon={faMapMarkerAlt} />
                                 <span className="ml-2">Nasirabad H/S, Chattagram</span>
