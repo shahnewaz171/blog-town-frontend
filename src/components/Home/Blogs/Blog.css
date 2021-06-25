@@ -1,0 +1,6 @@
+@media screen and (max-width: 767px) {
+    .blog-card {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
