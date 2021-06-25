@@ -1,0 +1,26 @@
+.blog-details h1{
+    color: #4a4a4a !important;
+}
+.blog-description p,
+.blog-description ol li{
+    line-height: 1.563em;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    .blog-details h1{
+        font-size: 1.2rem !important;
+        padding-left: 15px;
+        padding-right: 10px;
+        color: rgb(68, 68, 68) !important;
+    }
+}
+@media screen and (min-width: 768px) {
+    .blogDetails-img img{
+        width: 1040px;
+    }
+    .blog-description{
+        width: 820px;
+        margin: 0 auto;
+    }
+}

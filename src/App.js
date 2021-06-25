@@ -6,6 +6,7 @@ import Dropdown from './components/Home/Navbar/Dropdown';
 import { useEffect, useState } from 'react';
 import Blogs from './components/Home/Blogs/Blogs';
 import CreatePost from './components/CreatePost/CreatePost';
+import BlogDetails from './components/Home/BlogDetails/BlogDetails';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,6 +46,9 @@ function App() {
           </Route>
           <Route path="/blogs">
             <Blogs />
+          </Route>
+          <Route path="/blogDetails">
+            <BlogDetails />
           </Route>
         </Switch>
       </Router>
