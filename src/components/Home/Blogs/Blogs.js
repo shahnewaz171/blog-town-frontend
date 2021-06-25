@@ -5,11 +5,20 @@ import { faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 
 
 const Blogs = () => {
+    const handleSubmit = event => {
+        event.preventDefault();
+    }
+
     return (
         <div className="md:px-20">
-            <div className="mt-5 pt-5 flex flex-col justify-center items-center mb-5">
-                <div className="text-3xl font-extrabold text-green-900 flex items-center">
-                    <h2 className="mb-1">All Blogs</h2>
+            <div className="mt-12 flex flex-col justify-center items-center mb-5">
+                <div className="sm:w-1/2 lg:w-1/3">
+                    <form onSubmit={handleSubmit} className="flex justify-center">
+                        <input className="focus:outline-none focus:bg-white focus:shadow-outline focus:border-gray-300 py-2 px-4 rounded w-full border-2 border-green-200" placeholder="Search blogs..." required />
+                        <button type="submit" className="text-white bg-green-800 hover:bg-green-700 py-2 px-8 rounded">
+                            Search
+                        </button>
+                    </form>
                 </div>
             </div>
             <div className="flex flex-wrap -m-4 mt-5 pt-5">

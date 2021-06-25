@@ -4,7 +4,7 @@ import './Navbar.css';
 
 const Navbar = ({toggle}) => {
     return (
-        <div>
+        <div className="pb-5">
             <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm md:px-20 font-mono">
                 <Link to="/home" className="text-2xl font-extrabold nav-title">BlogTown</Link>
                 <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
