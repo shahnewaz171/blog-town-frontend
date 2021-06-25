@@ -4,6 +4,8 @@ import Home from './components/Home/Home';
 import Navbar from './components/Home/Navbar/Navbar';
 import Dropdown from './components/Home/Navbar/Dropdown';
 import { useEffect, useState } from 'react';
+import Blogs from './components/Home/Blogs/Blogs';
+import CreatePost from './components/CreatePost/CreatePost';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,8 +34,17 @@ function App() {
         <Navbar toggle={toggle} />
         <Dropdown isOpen={isOpen} toggle={toggle} />
         <Switch>
-          <Route to="/">
+          <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/createPost">
+            <CreatePost />
+          </Route>
+          <Route path="/blogs">
+            <Blogs />
           </Route>
         </Switch>
       </Router>
