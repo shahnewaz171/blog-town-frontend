@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react';
 import Blogs from './components/Home/Blogs/Blogs';
 import CreatePost from './components/CreatePost/CreatePost';
 import BlogDetails from './components/Home/BlogDetails/BlogDetails';
-import Admin from './components/Admin/Admin';
 import ManageBlogs from './components/Admin/ManageBlogs/ManageBlogs';
 
 function App() {
@@ -47,9 +46,6 @@ function App() {
           </Route>
           <Route path="/blogDetails">
             <BlogDetails />
-          </Route>
-          <Route path="/admin-profile">
-            <Admin />
           </Route>
           <Route path="/create-blog">
             <CreatePost />
